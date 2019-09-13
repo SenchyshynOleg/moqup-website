@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:400,700|Frijole&display=swap&subset=cyrillic,cyrillic-ext');
+
+:root {
+    --accent-color: #0c61eb;
+    --font-color: black;
+    font-family: 'Comfortaa', sans-serif;
+    scroll-behavior: smooth;
+    }
+
+body {
+    max-width: 980px;
+    margin: auto;
+    background: url(../img/grey-background.jpg);
+    background-size: cover;
+    background-attachment: fixed ;
+    }
+
+header nav .logo {
+    font-family: 'Frijole', sans-serif;
+    font-size: 2rem;
+    margin: 1rem 0;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: context-menu;
+    text-shadow: 1px 4px 0px rgba(255, 255, 255, 0.96);
+    }
+
+header nav .menu {
+    display: flex;
+    padding: 0;
+    list-style-type: none;
+    justify-content: space-around;
+    }
+
+header nav .menu li a {
+    text-decoration: none;
+    color: var(--font-color);
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    padding: 3px;
+    }
+
+header nav .menu li a:hover  {
+    border: 1px solid transparent;
+    text-shadow: 0px 0px 14px rgba(61, 53, 53, 1);
+    border-style: dotted;
+    cursor: pointer;
+    font-weight: 900;
+    }
+
+
+@media (min-width: 600px) {
+    header nav {
+        display: flex;
+        align-items: center;
+    }
+
+    header nav .menu {
+        flex: 1;
+    }
+}
+
+header .banner {
+    background-image: url('../img/dodge.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    }
+
+header .banner h1 {
+    font-family: 'Frijole', sans-serif;
+    font-size: 6vw;
+    font-weight: inherit;
+    margin: 1rem 0;
+    text-align: center;
+    text-transform: uppercase;
+    background: linear-gradient(9deg, #d81a1a 33%, #f37f07 66%, #7b046e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: black;
+    display: table;
+    cursor: context-menu;
+    transition-duration: 1s
+    }
+
+header .banner p {
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 5vw;
+    background: white;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+    cursor: context-menu;
+    transition: 1s;
+    }
+
+header .banner button .submit{
+    font-family: 'Comfortaa', sans-serif;
+    background: white;
+    font-size: 5vw;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+    cursor: pointer;
+    }
+
+header .banner button{
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 5vw;
+    background: transparent;
+    margin: 0px;
+    border-width: 5px;
+    border-style: dotted;
+    border-color:transparent;
+    cursor: pointer;
+    color: white;
+    transition: 1s;
+    }
+
+header .banner button:hover  {
+
+    border: 4px;
+    border-style: dotted;
+    color: orange;
+    border-width: 5px;
+    margin: 0;
+    box-shadow: 0px 1px 46px 19px #0c0a048e;
+    cursor: pointer;
+    transition: 1s;
+    }
+
+@media (min-width: 320px) {
+    header .banner h1 {
+        display: flex;
+        align-items: center;
+        font-size: 40px
+    }
+
+@media (min-width: 727px){
+    header .banner p {
+        display: flex;
+        align-items: center;
+        font-size: 40px;
+        }
+    header .banner button{
+        font-size: 40px;
+    }
+}
+
+/* Стилі для вкладки Сервіс */
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;}
+
+  @media (min-width: 320px){
+    .accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    }
+}

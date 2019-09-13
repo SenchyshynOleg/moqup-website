@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="shortcut icon" href="ico/car_repair.ico" type="image/x-icon">
+	<title>Document</title>
+</head>
+
+<body>
+	<div id="logo">
+		<a href="index.html">Головна сторінка</a>
+	</div>
+	<img src="img/online.jpg" alt="online-registration">
+    <form  method="POST" action="https://formspree.io/6181500@gmail.com">
+        <div class="client-form" title="client-contact info">
+            <h2>Контактна інформація</h2>
+        <!-- введення ПІБ -->
+            <label>
+                Ваше ім'я : <input type="text" name="User-name">
+            </label>
+            <br>
+        <!-- вкладка розуміє e-mail -->
+            <label for="user-email">Електронна адреса: </label>
+            <input id="user-email" type="email" name="user email">
+            <br>
+            <label>
+                Номер телефону: <input type="tel" name="phone number">
+            </label>
+        </div>
+        <div class="client-form" title="auto info">
+            <h2>Інформація про авто</h2>
+            <label for="auto">
+                <textarea id="auto" cols="40" rows="4" placeholder="Введіть марку авто, модель та рік випуску (наприклад Audi a6 2019)"></textarea>
+            </label>
+        </div>
+        <!-- Тип робіт -->
+        <div class="client-form" title="service info">
+            <h2>Тип робіт, які портібно виконати:</h2>
+            <br>
+            <label>
+                <input type="checkbox" name="service" value="maintance">Планове ТО
+            </label>
+
+            <br>
+            <label>
+                <input type="checkbox" name="service" value="suspention">Ходова
+            </label>
+
+            <br>
+            <label>
+                <input type="checkbox" name="service" value="oil">Заміна мастил
+            </label>
+
+            <br>
+            <label>
+                <input type="checkbox" name="service" value="engine">Двигун
+            </label>
+
+            <br>
+            <label>
+                <input type="checkbox" name="service" value="transmition">КПП
+            </label>
+
+            <br>
+            <label>
+                <input type="checkbox" name="service" value="wash">Мийка авто
+            </label>
+
+            <br>
+            <label for="comments">
+                <textarea id="comments" name="detail" cols="30" rows="10" placeholder="Введіть суть проблеми"></textarea>
+            </label>
+            <br>
+            <label for="date">Оберіть бажану дату запису до СТО:
+                <input type="date" id="date">
+            </label>
+        </div>
+    </form>
+    <br>
+    <button type="submit">Записатись</button>
+    <hr>
+    <footer>
+      <div id="contact">
+        <h3>Контакти:</h3>
+            <ul class="contact-info">
+                <li>
+                    <a href="tel:+380670000000">+38(067)000-00-00</a>
+                </li>
+                <li>
+                    <a href="mailto:6181500@gmail.com" target="_blank">6181500@gmail.com</a>
+                </li>
+                <li>
+                    <a href="https://www.google.com/maps/place/Львів" target="_blank">Де ми на карті</a>
+                </li>
+            </ul>
+        </div>
+        <p>@Дана сторінка створена в навчальних цілях в серпні 2019р.</p>
+  </footer>
+</body>
+</html>
